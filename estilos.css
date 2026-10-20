@@ -1,0 +1,118 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #e9d5ff);
+    color: #1e293b;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Selector por ID */
+#formulario h1 {
+    color: #6d28d9;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+/* Selector por clase */
+.subtitulo {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+/* Selector por elemento */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #a78bfa;
+    border-color: #7c3aed;
+}
+
+.intereses {
+    border: 1px solid #ddd6fe;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 22px;
+    background-color: #f5f3ff;
+}
+
+.intereses legend {
+    color: #6d28d9;
+    font-weight: bold;
+}
+
+.intereses label {
+    font-weight: normal;
+    margin: 12px 0;
+}
+
+.intereses input {
+    accent-color: #7c3aed;
+}
+
+/* Estilos del botón */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5b21b6;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 500px) {
+    .contenedor {
+        padding: 22px;
+    }
+
+    #formulario h1 {
+        font-size: 23px;
+    }
+}
